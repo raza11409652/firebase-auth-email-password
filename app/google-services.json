@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "626263626302",
+    "firebase_url": "https://testupload-16710.firebaseio.com",
+    "project_id": "testupload-16710",
+    "storage_bucket": "testupload-16710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626263626302:android:da6be16fa532461849376f",
+        "android_client_info": {
+          "package_name": "com.hackdroid.firebaseauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626263626302-vggt69bohsu7hnjsr6oc60lhrpp4rc2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackdroid.firebaseauth",
+            "certificate_hash": "6715c326fda71fa2adc65d6eb6cf371d60170e08"
+          }
+        },
+        {
+          "client_id": "626263626302-gs4r55qioehml97sfnrc79i310vp9u11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbn-DZfWEcWlNyY2m02WAXEE5BD_KAZmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626263626302-gs4r55qioehml97sfnrc79i310vp9u11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
