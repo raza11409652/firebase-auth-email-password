@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -108,6 +109,25 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void _signInWithemailandpassword(String email, String password) {
+        _auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    _currentUser = _auth.getCurrentUser();
+                    if (_currentUser.isEmailVerified() == false) {
+                        sendVerification(_currentUser);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Login Succe", Toast.LENGTH_SHORT).show();
+                        //login success do other stuffe
+                    }
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d(TAG, "onFailure: " + e.getLocalizedMessage());
+            }
+        });
 
 
     }
